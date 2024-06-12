@@ -283,4 +283,10 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "none";
         }
     }
+
+	document.getElementById('flagFeatureLink').addEventListener('click', function(event) {
+		event.preventDefault(); // Prevent the default link behavior
+		document.getElementById('viewProjectBtn').click(); // Trigger the button click
+	});
+	
 });
